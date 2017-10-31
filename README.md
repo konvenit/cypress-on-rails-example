@@ -1,24 +1,21 @@
-# README
+# cypress-on-rails-example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a very simple example on how to use the [cypress-on-rails](http://github.com/konvenit/cypress-on-rails) gem.
 
-Things you may want to cover:
+## Setup
+```
+bundle install
+yarn install
+RAILS_ENV=test rails db:migrate
+```
 
-* Ruby version
+## Usage
+After setup run this command:
+```
+bundle exec cypress
+```
 
-* System dependencies
+This will open the cypress.io UI where you can run the included test.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## What to look at
+The interesting files are in `spec/cypress`
