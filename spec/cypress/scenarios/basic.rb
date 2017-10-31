@@ -1,4 +1,3 @@
 scenario :basic do
-  # You can setup your Rails state here
-  # MyModel.create name: 'something'
+  Profile.create name: "Cypress Hill"
 end

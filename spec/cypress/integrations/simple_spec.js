@@ -6,5 +6,7 @@ describe('My First Test', function() {
 
     // The application unter test is available at SERVER_PORT
     cy.visit('http://localhost:'+Cypress.env("SERVER_PORT"))
+
+    cy.contains("Cypress Hill")
   })
 })
